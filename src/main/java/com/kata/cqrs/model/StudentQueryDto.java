@@ -5,13 +5,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class StudentRegistrationCommandDto {
+public class StudentQueryDto {
+
+  private Long registrationNumber;
   private String name;
   private String email;
   private String yearOfRegistration;
   private String section;
+  private Address address;
 }
